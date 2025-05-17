@@ -1,13 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>微涼．秋季 舒適穿著的童裝｜無印良品</title>
+    <meta name="description" content="&nbsp;" />
+    <meta property="og:title" content="微涼．秋季 舒適穿著的童裝｜無印良品" />
+    <meta property="og:description" content="&nbsp;" />
+    <meta
+      property="og:url"
+      content="https://www.muji.com/tw/feature/24aw/kids/"
+    />
+    <meta
+      property="og:image"
+      content="https://www.muji.com/tw/feature/24aw/kids/assets/img/kids/ogp.jpg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="canonical" href="https://www.muji.com/tw/feature/24aw/kids/" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&amp;display=swap&amp;subset=japanese"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.muji.com/jp/ja/special-feature/common/sf-design/css/2.1.0/app.css"
+      media="all"
+    />
+    <script
+      src="https://www.muji.com/jp/ja/special-feature/common/sf-design/js/2.1.0/app.js"
+      defer
+    ></script>
+
+    <script src="//typesquare.com/3/tsst/script/ja/typesquare.js?u1wVyo-ROkg%3D"></script>
+    <link rel="stylesheet" href="/src/assets/css/index.css" media="all" />
+
+    <script src="/src/assets/js/index.js" defer></script>
+
+    <!-- header/footer CSS -->
+    <link rel="stylesheet" href="//www.muji.com/css/muji.2.2.css" />
+    <!-- jQuery Core - CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- googl fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-361YVPYLP7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-361YVPYLP7");
+    </script>
+    <!--新的Adobe 追蹤碼-->
+    <script
+      src="//assets.adobedtm.com/147e71336114/4b819c1a7781/launch-73d986cdff40.min.js"
+      async
+    ></script>
   </head>
-  <body>
+  <body data-show-header-banner="true">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <button
+      class="sf-pageTop js-sf-pageTop js-sf-smoothScroll"
+      type="button"
+      aria-label="ページトップに戻る"
+      data-link=".sf-root"
+    >
+      TOP
+    </button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to handle color chip click
+        function handleColorChipClick(event) {
+          event.preventDefault();
+          const chip = event.currentTarget;
+          const productItem = chip.closest(".sf-simpleBff_productsItem");
+          // Remove 'selected' class and border from all color chips within the same product item
+          productItem
+            .querySelectorAll(".js-sf-simpleBff_productsItemColorChip")
+            .forEach(function (otherChip) {
+              otherChip.classList.remove("selected");
+              otherChip.style.border = "none";
+            });
+          // Add 'selected' class and border to the clicked color chip
+          chip.classList.add("selected");
+          chip.style.border = "1px solid #747474";
+          // Update other parts of the UI or perform additional actions if needed
+          const imageUrl = chip.getAttribute("data-image-url");
+          const productImage = productItem.querySelector(
+            ".js-sf-simpleBff_productsItemImage"
+          );
+          productImage.src = imageUrl;
+          // Update the data-jan attribute for the corresponding link
+          const jan = chip.getAttribute("data-jan");
+          productItem.setAttribute("data-jan", jan);
+          // Update the product link
+          const productLink = chip.getAttribute("data-product-link") || "";
+          const mainProductLink = productItem.querySelector(
+            ".sf-simpleBff_productsItemHead a"
+          );
+          mainProductLink.href = productLink + "?jan=" + jan;
+          // You can also update other product information or perform additional actions here
+        }
+        // Add click event listeners to color chips
+        document
+          .querySelectorAll(".js-sf-simpleBff_productsItemColorChip")
+          .forEach(function (chip) {
+            chip.addEventListener("click", handleColorChipClick);
+          });
+      });
+    </script>
+    <script>
+      // 用於處理連結更新的函數
+      function updateLink(element) {
+        const jan = element.getAttribute("data-jan");
+        // 如果 data-jan 存在，則更新連結
+        if (jan) {
+          const currentHref = "https://api.91app.com/es/Redirect/41566/" + jan;
+          // 更新 href 屬性
+          element.setAttribute("href", currentHref);
+          // 輸出更新後的 href，以確保正確性
+          console.log("Updated href:", currentHref);
+        }
+      }
+      // 在文檔加載完成後，為所有具有特定類別的元素添加事件監聽器
+      document.addEventListener("DOMContentLoaded", function () {
+        // 選擇所有具有特定類別的商品項目
+        const productItems = document.querySelectorAll(
+          ".js-sf-simpleBff_productsItem"
+        );
+        // 初始化時更新連結
+        productItems.forEach(function (productItem) {
+          updateLink(productItem);
+        });
+        // 點擊時更新連結
+        productItems.forEach(function (productItem) {
+          productItem.addEventListener("click", function () {
+            updateLink(productItem);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
