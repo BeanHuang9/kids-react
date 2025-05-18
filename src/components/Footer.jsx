@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer id="globalFooter" className="sf-footer">
-      <link rel="stylesheet" href="/tw/common/css/footer.css" />
+      <link rel="stylesheet" href="https://www.muji.com/tw/common/css/footer.css" />
 
       <div className="ant-layout">
         <div className="ant-layout-footer ant-space">
