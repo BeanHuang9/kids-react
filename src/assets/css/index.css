@@ -3,6 +3,10 @@
     --color-beige-250: #f2f1ed
 }
 
+main{
+    display: block!important;
+}
+
 .sf-u-bg_beige-250 {
     background: #f2f1ed;
     background: var(--color-beige-250)
