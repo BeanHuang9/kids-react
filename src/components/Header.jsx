@@ -1,4 +1,4 @@
-// import logo from "../assets/img/logo.svg";
+import logo from "@/assets/img/logo_muji_b.png";
 // console.log("logo path:", logo);
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
       <div className="headerWrap">
         <h1 id="siteName">
           <a href="https://shop.muji.tw/">
-            <img src="../assets/img/logo.svg" alt="MUJI" />
+            <img src={logo} alt="MUJI" />
           </a>
         </h1>
         <nav id="hGlobalNav">
