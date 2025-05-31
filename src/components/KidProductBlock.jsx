@@ -1,132 +1,14 @@
+import { useEffect, useState } from "react";
 import ProductList from "@/components/ProductList";
 
 const KidProductBlock = () => {
-  const products1 = [
-    {
-      jan: "4550584160295",
-      name: "兒童二重織裏毛圓領衫1111",
-      link: "https://api.91app.com/es/Redirect/41566/4550584160295",
-      price: 490,
-      imageUrl:
-        "https://www.muji.com/public/media/img/item/4550584160295_org.jpg",
-      colors: [
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584160295_99_95.jpg",
-          jan: "4550584160295",
-          isCurrent: true,
-          alt: "灰色",
-          title: "灰色",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584160349_99_95.jpg",
-          jan: "4550584160349",
-          isCurrent: false,
-          alt: "黑色",
-          title: "黑色",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584160394_99_95.jpg",
-          jan: "4550584160394",
-          isCurrent: false,
-          alt: "煙燻綠",
-          title: "煙燻綠",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584160493_99_95.jpg",
-          jan: "4550584160493",
-          isCurrent: false,
-          alt: "煙燻紫",
-          title: "煙燻紫",
-        },
-      ],
-    },
-  ];
+  const [data, setData] = useState({});
 
-  const products2 = [
-    {
-      jan: "4550584084829",
-      name: "兒童彈性綾織寬鬆合身褲",
-      link: "https://api.91app.com/es/Redirect/41566/4550584084829",
-      price: 590,
-      imageUrl:
-        "https://www.muji.com/public/media/img/item/4550584084829_org.jpg",
-      colors: [
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584084676_99_95.jpg",
-          jan: "4550584084676",
-          isCurrent: false,
-          alt: "黑色",
-          title: "黑色",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584084720_99_95.jpg",
-          jan: "4550584084720",
-          isCurrent: false,
-          alt: "米色",
-          title: "米色",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584084775_99_95.jpg",
-          jan: "4550584084775",
-          isCurrent: false,
-          alt: "深米",
-          title: "深米",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584084829_99_95.jpg",
-          jan: "4550584084829",
-          isCurrent: true,
-          alt: "深綠",
-          title: "深綠",
-        },
-
-      ],
-    },
-    {
-      jan: "4550584132452",
-      name: "兒童二重織裏毛休閒褲",
-      link: "https://api.91app.com/es/Redirect/41566/4550584132452",
-      price: 490,
-      imageUrl:
-        "https://www.muji.com/public/media/img/item/4550584132452_org.jpg",
-      colors: [
-
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584132407_99_95.jpg",
-          jan: "4550584132407",
-          isCurrent: false,
-          alt: "灰色",
-          title: "灰色",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584132452_99_95.jpg",
-          jan: "4550584132452",
-          isCurrent: true,
-          alt: "黑色",
-          title: "黑色",
-        },
-        {
-          imageUrl:
-            "https://www.muji.com/public/media/img/item/4550584132506_99_95.jpg",
-          jan: "4550584132506",
-          isCurrent: false,
-          alt: "淺米",
-          title: "淺米",
-        },
-
-      ],
-    },
-  ];
+  useEffect(() => {
+    fetch("/data/products.json")
+      .then((res) => res.json())
+      .then((json) => setData(json));
+  }, []);
 
   return (
     <>
@@ -203,7 +85,7 @@ const KidProductBlock = () => {
                   data-colorchip="true"
                   data-show-comingsoon-badge="true"
                 >
-                  <ProductList products={products1} />
+                  {data.products1 && <ProductList products={data.products1} />}
                 </section>
             </div>
           </div>
@@ -225,7 +107,7 @@ const KidProductBlock = () => {
               data-colorchip="true"
               data-show-comingsoon-badge="true"
                 >
-                  <ProductList products={products2} />
+                  {data.products2 && <ProductList products={data.products2} />}
                 </section>
 
 
