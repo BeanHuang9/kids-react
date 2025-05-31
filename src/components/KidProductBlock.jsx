@@ -1,4 +1,133 @@
+import ProductList from "@/components/ProductList";
+
 const KidProductBlock = () => {
+  const products1 = [
+    {
+      jan: "4550584160295",
+      name: "兒童二重織裏毛圓領衫1111",
+      link: "https://api.91app.com/es/Redirect/41566/4550584160295",
+      price: 490,
+      imageUrl:
+        "https://www.muji.com/public/media/img/item/4550584160295_org.jpg",
+      colors: [
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584160295_99_95.jpg",
+          jan: "4550584160295",
+          isCurrent: true,
+          alt: "灰色",
+          title: "灰色",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584160349_99_95.jpg",
+          jan: "4550584160349",
+          isCurrent: false,
+          alt: "黑色",
+          title: "黑色",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584160394_99_95.jpg",
+          jan: "4550584160394",
+          isCurrent: false,
+          alt: "煙燻綠",
+          title: "煙燻綠",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584160493_99_95.jpg",
+          jan: "4550584160493",
+          isCurrent: false,
+          alt: "煙燻紫",
+          title: "煙燻紫",
+        },
+      ],
+    },
+  ];
+
+  const products2 = [
+    {
+      jan: "4550584084829",
+      name: "兒童彈性綾織寬鬆合身褲",
+      link: "https://api.91app.com/es/Redirect/41566/4550584084829",
+      price: 590,
+      imageUrl:
+        "https://www.muji.com/public/media/img/item/4550584084829_org.jpg",
+      colors: [
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584084676_99_95.jpg",
+          jan: "4550584084676",
+          isCurrent: false,
+          alt: "黑色",
+          title: "黑色",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584084720_99_95.jpg",
+          jan: "4550584084720",
+          isCurrent: false,
+          alt: "米色",
+          title: "米色",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584084775_99_95.jpg",
+          jan: "4550584084775",
+          isCurrent: false,
+          alt: "深米",
+          title: "深米",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584084829_99_95.jpg",
+          jan: "4550584084829",
+          isCurrent: true,
+          alt: "深綠",
+          title: "深綠",
+        },
+
+      ],
+    },
+    {
+      jan: "4550584132452",
+      name: "兒童二重織裏毛休閒褲",
+      link: "https://api.91app.com/es/Redirect/41566/4550584132452",
+      price: 490,
+      imageUrl:
+        "https://www.muji.com/public/media/img/item/4550584132452_org.jpg",
+      colors: [
+
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584132407_99_95.jpg",
+          jan: "4550584132407",
+          isCurrent: false,
+          alt: "灰色",
+          title: "灰色",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584132452_99_95.jpg",
+          jan: "4550584132452",
+          isCurrent: true,
+          alt: "黑色",
+          title: "黑色",
+        },
+        {
+          imageUrl:
+            "https://www.muji.com/public/media/img/item/4550584132506_99_95.jpg",
+          jan: "4550584132506",
+          isCurrent: false,
+          alt: "淺米",
+          title: "淺米",
+        },
+
+      ],
+    },
+  ];
+
   return (
     <>
       <section className="products sf-u-contents_desktop ">
@@ -64,238 +193,18 @@ const KidProductBlock = () => {
               </div>
             </div>
             <div className="products__pickItem sf-u-mt_m-mobile sf-u-mt_m-tablet sf-u-contents_mobile sf-u-contents_tablet -center">
-              <div
-                className="sf-simpleBff -loading-complete"
-                data-desktop-column="5"
-                data-mobile-column="2"
-                data-product-type="default"
-                data-button-visible="false"
-                data-button-nostock-display="true"
-                data-colorchip="true"
-                data-show-comingsoon-badge="true"
-              >
-                <div className="sf-simpleBff_products" role="list">
-                  <a
-                    className="sf-simpleBff_productsItem js-sf-simpleBff_productsItem jan-4550584160295"
-                    href="https://api.91app.com/es/Redirect/41566/4550584160295"
-                    data-current-chip="4550584160295"
-                  >
-                    <div className="sf-simpleBff_productsItemHead">
-                      <div
-                        className="sf-u-imgAdjustBox"
-                        data-aspect-ratio="1:1"
-                      >
-                        <picture className="sf-u-imgAdjustBox_inner">
-                          <img
-                            className="sf-u-img js-sf-simpleBff_productsItemImage lazyloaded"
-                            src="https://www.muji.com/public/media/img/item/4550584160295_org.jpg"
-                            alt="兒童二重織裏毛圓領衫"
-                            data-src="https://www.muji.com/public/media/img/item/4550584160295_org.jpg"
-                            data-expand="300"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                    <div className="sf-simpleBff_productsItemBody">
-                      <ul
-                        className="sf-simpleBff_productsItemColorChips js-sf-simpleBff_productsItemColorChips"
-                        aria-label="色展開"
-                      >
-                        <li>
-                          <button
-                            className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                            type="button"
-                            data-name="兒童二重織裏毛圓領衫"
-                            data-is-current="true"
-                            data-image-url="https://www.muji.com/public/media/img/item/4550584160295_org.jpg"
-                            data-jan="4550584160295"
-                            data-price="490"
-                            data-pricekindlist=""
-                            data-new="false"
-                            data-stock="FEWNESS"
-                            data-order=""
-                            data-salesstatus="NORMAL"
-                            data-show-comingsoon-badge="true"
-                            aria-selected="true"
-                          >
-                            <div
-                              className="sf-u-imgAdjustBox"
-                              data-aspect-ratio="1:1"
-                            >
-                              <picture className="sf-u-imgAdjustBox_inner">
-                                <img
-                                  className="sf-u-img lazyloaded"
-                                  src="https://www.muji.com/public/media/img/item/4550584160295_99_95.jpg"
-                                  alt="灰色"
-                                  title="灰色"
-                                  data-src="https://www.muji.com/public/media/img/item/4550584160295_99_95.jpg"
-                                  data-expand="300"
-                                />
-                              </picture>
-                            </div>
-                          </button>
-                        </li>
-
-                        <li>
-                          <button
-                            className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                            type="button"
-                            data-name="兒童二重織裏毛圓領衫"
-                            data-is-current="false"
-                            data-image-url="https://www.muji.com/public/media/img/item/4550584160349_org.jpg"
-                            data-jan="4550584160349"
-                            data-price="490"
-                            data-pricekindlist=""
-                            data-new="false"
-                            data-stock="STOCK"
-                            data-order=""
-                            data-salesstatus="NORMAL"
-                            data-show-comingsoon-badge="true"
-                            aria-selected="false"
-                          >
-                            <div
-                              className="sf-u-imgAdjustBox"
-                              data-aspect-ratio="1:1"
-                            >
-                              <picture className="sf-u-imgAdjustBox_inner">
-                                <img
-                                  className="sf-u-img lazyloaded"
-                                  src="https://www.muji.com/public/media/img/item/4550584160349_99_95.jpg"
-                                  alt="黑色"
-                                  title="黑色"
-                                  data-src="https://www.muji.com/public/media/img/item/4550584160349_99_95.jpg"
-                                  data-expand="300"
-                                />
-                              </picture>
-                            </div>
-                          </button>
-                        </li>
-
-                        <li>
-                          <button
-                            className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                            type="button"
-                            data-name="兒童二重織裏毛圓領衫"
-                            data-is-current="false"
-                            data-image-url="https://www.muji.com/public/media/img/item/4550584160394_org.jpg"
-                            data-jan="4550584160394"
-                            data-price="490"
-                            data-pricekindlist=""
-                            data-new="false"
-                            data-stock="STOCK"
-                            data-order=""
-                            data-salesstatus="NORMAL"
-                            data-show-comingsoon-badge="true"
-                            aria-selected="false"
-                          >
-                            <div
-                              className="sf-u-imgAdjustBox"
-                              data-aspect-ratio="1:1"
-                            >
-                              <picture className="sf-u-imgAdjustBox_inner">
-                                <img
-                                  className="sf-u-img lazyloaded"
-                                  src="https://www.muji.com/public/media/img/item/4550584160394_99_95.jpg"
-                                  alt="煙燻綠"
-                                  title="煙燻綠"
-                                  data-src="https://www.muji.com/public/media/img/item/4550584160394_99_95.jpg"
-                                  data-expand="300"
-                                />
-                              </picture>
-                            </div>
-                          </button>
-                        </li>
-
-                        <li>
-                          <button
-                            className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                            type="button"
-                            data-name="兒童二重織裏毛圓領衫"
-                            data-is-current="false"
-                            data-image-url="https://www.muji.com/public/media/img/item/4550584160448_org.jpg"
-                            data-jan="4550584160448"
-                            data-price="490"
-                            data-pricekindlist=""
-                            data-new="false"
-                            data-stock="STOCK"
-                            data-order=""
-                            data-salesstatus="NORMAL"
-                            data-show-comingsoon-badge="true"
-                            aria-selected="false"
-                          >
-                            <div
-                              className="sf-u-imgAdjustBox"
-                              data-aspect-ratio="1:1"
-                            >
-                              <picture className="sf-u-imgAdjustBox_inner">
-                                <img
-                                  className="sf-u-img lazyloaded"
-                                  src="https://www.muji.com/public/media/img/item/4550584160448_99_95.jpg"
-                                  alt="淡藍"
-                                  title="淡藍"
-                                  data-src="https://www.muji.com/public/media/img/item/4550584160448_99_95.jpg"
-                                  data-expand="300"
-                                />
-                              </picture>
-                            </div>
-                          </button>
-                        </li>
-
-                        <li>
-                          <button
-                            className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                            type="button"
-                            data-name="兒童二重織裏毛圓領衫"
-                            data-is-current="false"
-                            data-image-url="https://www.muji.com/public/media/img/item/4550584160493_org.jpg"
-                            data-jan="4550584160493"
-                            data-price="490"
-                            data-pricekindlist=""
-                            data-new="false"
-                            data-stock="STOCK"
-                            data-order=""
-                            data-salesstatus="NORMAL"
-                            data-show-comingsoon-badge="true"
-                            aria-selected="false"
-                          >
-                            <div
-                              className="sf-u-imgAdjustBox"
-                              data-aspect-ratio="1:1"
-                            >
-                              <picture className="sf-u-imgAdjustBox_inner">
-                                <img
-                                  className="sf-u-img lazyloaded"
-                                  src="https://www.muji.com/public/media/img/item/4550584160493_99_95.jpg"
-                                  alt="煙燻紫"
-                                  title="煙燻紫"
-                                  data-src="https://www.muji.com/public/media/img/item/4550584160493_99_95.jpg"
-                                  data-expand="300"
-                                />
-                              </picture>
-                            </div>
-                          </button>
-                        </li>
-                      </ul>
-                      <h4 className="sf-simpleBff_productsItemHeading">
-                        兒童二重織裏毛圓領衫
-                      </h4>
-                      <div className="sf-simpleBff_productsItemDetail">
-                        <p className="sf-simpleBff_productsItemPrice">
-                          售價
-                          <span className="sf-simpleBff_productsItemPriceBlock">
-                            <span className="sf-simpleBff_productsItemPriceNum">
-                              490
-                            </span>
-                            元
-                          </span>
-                        </p>
-                        <div className="sf-simpleBff_productsItemStatus"></div>
-                        <div className="sf-simpleBff_productsItemButton"></div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+              <section
+                  className="sf-simpleBff -loading-complete"
+                  data-desktop-column="5"
+                  data-mobile-column="2"
+                  data-product-type="default"
+                  data-button-visible="false"
+                  data-button-nostock-display="true"
+                  data-colorchip="true"
+                  data-show-comingsoon-badge="true"
+                >
+                  <ProductList products={products1} />
+                </section>
             </div>
           </div>
 
@@ -304,347 +213,23 @@ const KidProductBlock = () => {
               其他穿著商品
             </h3>
 
-            <div
-              className="sf-simpleBff -loading-complete"
-              data-desktop-column="5"
+
+
+            <section
+                  className="sf-simpleBff -loading-complete"
+                  data-desktop-column="5"
               data-mobile-column="2"
               data-product-type="default"
               data-button-visible="false"
               data-button-nostock-display="true"
               data-colorchip="true"
               data-show-comingsoon-badge="true"
-            >
-              <div className="sf-simpleBff_products" role="list">
-                <a
-                  className="sf-simpleBff_productsItem js-sf-simpleBff_productsItem jan-4550584084829"
-                  href="https://api.91app.com/es/Redirect/41566/4550584084829"
-                  data-current-chip="4550584084829"
                 >
-                  <div className="sf-simpleBff_productsItemHead">
-                    <div className="sf-u-imgAdjustBox" data-aspect-ratio="1:1">
-                      <picture className="sf-u-imgAdjustBox_inner">
-                        <img
-                          className="sf-u-img js-sf-simpleBff_productsItemImage lazyloaded"
-                          src="https://www.muji.com/public/media/img/item/4550584084829_org.jpg"
-                          alt="兒童彈性綾織寬鬆合身褲"
-                          data-src="https://www.muji.com/public/media/img/item/4550584084829_org.jpg"
-                          data-expand="300"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="sf-simpleBff_productsItemBody">
-                    <ul
-                      className="sf-simpleBff_productsItemColorChips js-sf-simpleBff_productsItemColorChips"
-                      aria-label="色展開"
-                    >
-                      <li>
-                        <button
-                          className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                          type="button"
-                          data-name="兒童彈性綾織寬鬆合身褲"
-                          data-is-current="false"
-                          data-image-url="https://www.muji.com/public/media/img/item/4550584084676_org.jpg"
-                          data-jan="4550584084676"
-                          data-price="490"
-                          data-pricekindlist=""
-                          data-new="false"
-                          data-stock="STOCK"
-                          data-order=""
-                          data-salesstatus="NORMAL"
-                          data-show-comingsoon-badge="true"
-                          aria-selected="false"
-                        >
-                          <div
-                            className="sf-u-imgAdjustBox"
-                            data-aspect-ratio="1:1"
-                          >
-                            <picture className="sf-u-imgAdjustBox_inner">
-                              <img
-                                className="sf-u-img lazyloaded"
-                                src="https://www.muji.com/public/media/img/item/4550584084676_99_95.jpg"
-                                alt="黑色"
-                                title="黑色"
-                                data-src="https://www.muji.com/public/media/img/item/4550584084676_99_95.jpg"
-                                data-expand="300"
-                              />
-                            </picture>
-                          </div>
-                        </button>
-                      </li>
+                  <ProductList products={products2} />
+                </section>
 
-                      <li>
-                        <button
-                          className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                          type="button"
-                          data-name="兒童彈性綾織寬鬆合身褲"
-                          data-is-current="false"
-                          data-image-url="https://www.muji.com/public/media/img/item/4550584084720_org.jpg"
-                          data-jan="4550584084720"
-                          data-price="490"
-                          data-pricekindlist=""
-                          data-new="false"
-                          data-stock="STOCK"
-                          data-order=""
-                          data-salesstatus="NORMAL"
-                          data-show-comingsoon-badge="true"
-                          aria-selected="false"
-                        >
-                          <div
-                            className="sf-u-imgAdjustBox"
-                            data-aspect-ratio="1:1"
-                          >
-                            <picture className="sf-u-imgAdjustBox_inner">
-                              <img
-                                className="sf-u-img lazyloaded"
-                                src="https://www.muji.com/public/media/img/item/4550584084720_99_95.jpg"
-                                alt="米色"
-                                title="米色"
-                                data-src="https://www.muji.com/public/media/img/item/4550584084720_99_95.jpg"
-                                data-expand="300"
-                              />
-                            </picture>
-                          </div>
-                        </button>
-                      </li>
 
-                      <li>
-                        <button
-                          className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                          type="button"
-                          data-name="兒童彈性綾織寬鬆合身褲"
-                          data-is-current="false"
-                          data-image-url="https://www.muji.com/public/media/img/item/4550584084775_org.jpg"
-                          data-jan="4550584084775"
-                          data-price="490"
-                          data-pricekindlist=""
-                          data-new="false"
-                          data-stock="STOCK"
-                          data-order=""
-                          data-salesstatus="NORMAL"
-                          data-show-comingsoon-badge="true"
-                          aria-selected="false"
-                        >
-                          <div
-                            className="sf-u-imgAdjustBox"
-                            data-aspect-ratio="1:1"
-                          >
-                            <picture className="sf-u-imgAdjustBox_inner">
-                              <img
-                                className="sf-u-img lazyloaded"
-                                src="https://www.muji.com/public/media/img/item/4550584084775_99_95.jpg"
-                                alt="深米"
-                                title="深米"
-                                data-src="https://www.muji.com/public/media/img/item/4550584084775_99_95.jpg"
-                                data-expand="300"
-                              />
-                            </picture>
-                          </div>
-                        </button>
-                      </li>
 
-                      <li>
-                        <button
-                          className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                          type="button"
-                          data-name="兒童彈性綾織寬鬆合身褲"
-                          data-is-current="true"
-                          data-image-url="https://www.muji.com/public/media/img/item/4550584084829_org.jpg"
-                          data-jan="4550584084829"
-                          data-price="490"
-                          data-pricekindlist=""
-                          data-new="false"
-                          data-stock="STOCK"
-                          data-order=""
-                          data-salesstatus="NORMAL"
-                          data-show-comingsoon-badge="true"
-                          aria-selected="true"
-                        >
-                          <div
-                            className="sf-u-imgAdjustBox"
-                            data-aspect-ratio="1:1"
-                          >
-                            <picture className="sf-u-imgAdjustBox_inner">
-                              <img
-                                className="sf-u-img lazyloaded"
-                                src="https://www.muji.com/public/media/img/item/4550584084829_99_95.jpg"
-                                alt="深綠"
-                                title="深綠"
-                                data-src="https://www.muji.com/public/media/img/item/4550584084829_99_95.jpg"
-                                data-expand="300"
-                              />
-                            </picture>
-                          </div>
-                        </button>
-                      </li>
-                    </ul>
-                    <h4 className="sf-simpleBff_productsItemHeading">
-                      兒童彈性綾織寬鬆合身褲
-                    </h4>
-                    <div className="sf-simpleBff_productsItemDetail">
-                      <p className="sf-simpleBff_productsItemPrice">
-                        售價
-                        <span className="sf-simpleBff_productsItemPriceBlock">
-                          <span className="sf-simpleBff_productsItemPriceNum">
-                            590
-                          </span>
-                          元
-                        </span>
-                      </p>
-                      <div className="sf-simpleBff_productsItemStatus"></div>
-                      <div className="sf-simpleBff_productsItemButton"></div>
-                    </div>
-                  </div>
-                </a>
-
-                <a
-                  className="sf-simpleBff_productsItem js-sf-simpleBff_productsItem jan-4550584132452"
-                  href="https://api.91app.com/es/Redirect/41566/4550584132452"
-                  data-current-chip="4550584132452"
-                >
-                  <div className="sf-simpleBff_productsItemHead">
-                    <div className="sf-u-imgAdjustBox" data-aspect-ratio="1:1">
-                      <picture className="sf-u-imgAdjustBox_inner">
-                        <img
-                          className="sf-u-img js-sf-simpleBff_productsItemImage lazyloaded"
-                          src="https://www.muji.com/public/media/img/item/4550584132452_org.jpg"
-                          alt="兒童二重織裏毛休閒褲"
-                          data-src="https://www.muji.com/public/media/img/item/4550584132452_org.jpg"
-                          data-expand="300"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="sf-simpleBff_productsItemBody">
-                    <ul
-                      className="sf-simpleBff_productsItemColorChips js-sf-simpleBff_productsItemColorChips"
-                      aria-label="色展開"
-                    >
-                      <li>
-                        <button
-                          className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                          type="button"
-                          data-name="兒童二重織裏毛休閒褲"
-                          data-is-current="false"
-                          data-image-url="https://www.muji.com/public/media/img/item/4550584132407_org.jpg"
-                          data-jan="4550584132407"
-                          data-price="490"
-                          data-pricekindlist=""
-                          data-new="false"
-                          data-stock="STOCK"
-                          data-order=""
-                          data-salesstatus="NORMAL"
-                          data-show-comingsoon-badge="true"
-                          aria-selected="false"
-                        >
-                          <div
-                            className="sf-u-imgAdjustBox"
-                            data-aspect-ratio="1:1"
-                          >
-                            <picture className="sf-u-imgAdjustBox_inner">
-                              <img
-                                className="sf-u-img lazyloaded"
-                                src="https://www.muji.com/public/media/img/item/4550584132407_99_95.jpg"
-                                alt="灰色"
-                                title="灰色"
-                                data-src="https://www.muji.com/public/media/img/item/4550584132407_99_95.jpg"
-                                data-expand="300"
-                              />
-                            </picture>
-                          </div>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button
-                          className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                          type="button"
-                          data-name="兒童二重織裏毛休閒褲"
-                          data-is-current="true"
-                          data-image-url="https://www.muji.com/public/media/img/item/4550584132452_org.jpg"
-                          data-jan="4550584132452"
-                          data-price="490"
-                          data-pricekindlist=""
-                          data-new="false"
-                          data-stock="STOCK"
-                          data-order=""
-                          data-salesstatus="NORMAL"
-                          data-show-comingsoon-badge="true"
-                          aria-selected="true"
-                        >
-                          <div
-                            className="sf-u-imgAdjustBox"
-                            data-aspect-ratio="1:1"
-                          >
-                            <picture className="sf-u-imgAdjustBox_inner">
-                              <img
-                                className="sf-u-img lazyloaded"
-                                src="https://www.muji.com/public/media/img/item/4550584132452_99_95.jpg"
-                                alt="黑色"
-                                title="黑色"
-                                data-src="https://www.muji.com/public/media/img/item/4550584132452_99_95.jpg"
-                                data-expand="300"
-                              />
-                            </picture>
-                          </div>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button
-                          className="sf-simpleBff_productsItemColorChip js-sf-simpleBff_productsItemColorChip"
-                          type="button"
-                          data-name="兒童二重織裏毛休閒褲"
-                          data-is-current="false"
-                          data-image-url="https://www.muji.com/public/media/img/item/4550584132506_org.jpg"
-                          data-jan="4550584132506"
-                          data-price="490"
-                          data-pricekindlist=""
-                          data-new="false"
-                          data-stock="STOCK"
-                          data-order=""
-                          data-salesstatus="NORMAL"
-                          data-show-comingsoon-badge="true"
-                          aria-selected="false"
-                        >
-                          <div
-                            className="sf-u-imgAdjustBox"
-                            data-aspect-ratio="1:1"
-                          >
-                            <picture className="sf-u-imgAdjustBox_inner">
-                              <img
-                                className="sf-u-img lazyloaded"
-                                src="https://www.muji.com/public/media/img/item/4550584132506_99_95.jpg"
-                                alt="淺米"
-                                title="淺米"
-                                data-src="https://www.muji.com/public/media/img/item/4550584132506_99_95.jpg"
-                                data-expand="300"
-                              />
-                            </picture>
-                          </div>
-                        </button>
-                      </li>
-                    </ul>
-                    <h4 className="sf-simpleBff_productsItemHeading">
-                      兒童二重織裏毛休閒褲
-                    </h4>
-                    <div className="sf-simpleBff_productsItemDetail">
-                      <p className="sf-simpleBff_productsItemPrice">
-                        售價
-                        <span className="sf-simpleBff_productsItemPriceBlock">
-                          <span className="sf-simpleBff_productsItemPriceNum">
-                            490
-                          </span>
-                          元
-                        </span>
-                      </p>
-                      <div className="sf-simpleBff_productsItemStatus"></div>
-                      <div className="sf-simpleBff_productsItemButton"></div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
